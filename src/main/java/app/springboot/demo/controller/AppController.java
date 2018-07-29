@@ -23,7 +23,7 @@ public class AppController {
             method = RequestMethod.GET)
     @ResponseBody
     public String getAppUser(HttpServletRequest request,
-                               HttpServletResponse response) {
+                             HttpServletResponse response) {
         try {
             log.info("getExpressAppUserList has been called");
             return appUserLogic.getAppUser();
